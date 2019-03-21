@@ -6,6 +6,10 @@
  */
 /*
 # Change Log
+## [1.0.1] - 2019-03-21
+### Removed
+* Excess code from development phase
+
 ## [1.0.0] - 2019-03-21
 ### Notes
 * Initial Release
@@ -19,15 +23,5 @@ function openModalDialog() {
 /*****************************************************************************/
 function closeModalDialog() {
   document.getElementById("pgp-full-key").style.display = "none";
-};
-/*****************************************************************************/
-// add listener events on document load
-function toDoOnLoad() {
-  document.getElementById("closePGPdetails").addEventListener("click", function() { 
-    closeModalDialog(); 
-  });
-  document.getElementById("FullPGPButton").addEventListener("click", function() {
-    openModalDialog(); 
-  });
 };
 /*****************************************************************************/
